@@ -1,58 +1,4 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
-}
 
-.container{
-    width: 100%;
-    height: 100vh;
-    background: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.calculator{
-    background:#323b48;
-    padding: 20px;
-    border-radius: 10px;
-}
-.calculator form input{
-    border: 0;
-    outline: 0;
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),-5px -5px 15px rgba(59, 58, 58, 0.2);
-    background: transparent;
-    font-size: 20px;
-    color: antiquewhite;
-    cursor: pointer;
-    margin: 10px;
-}
-
-form .display{
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px 0;
-}
-
-form .display input{
-    text-align: right;
-    flex: 1;
-    font-size: 45px;
-    box-shadow: none;
-}
-
-form input .equal{
-    width: 145px;
-}
-
-form input .operator{
-    color: #506684;
-} */
 
 *{
     padding: 0;
@@ -66,6 +12,11 @@ body{
     background: linear-gradient(to bottom, red 50%,black );
 }
 
+.calc{
+    color: rgba(255, 255, 255, 0.218);
+}
+
+
 .calculator{
     width: 400px;
     background-color: rgb(13, 13, 13) ;
@@ -74,6 +25,9 @@ body{
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    border: 8px;
+    border-style: double;
+    border-color: rgba(255, 0, 0, 0.455);
     border-radius: 8px;
     box-shadow: 5px 20px 50px 10px black;
 }
@@ -101,22 +55,26 @@ body{
 .buttons{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-gap: 5px;
     margin-top: 40px;
+}
+
+.buttons input:hover{
+    transform: scale(1.2);
 }
 
 .buttons input[type="button"]{
     font-size: 20px;
     padding: 17px;
-    border: none;
-    background-color: transparent;
+    border: 3px;
+    background-color: rgba(0, 0, 0, 0.089);
     color: white;
     cursor: pointer;
     border-radius: 5px;
 }
 
 .buttons input[type="button"]:hover{
-    box-shadow: 0 10px 25px black;
+    box-shadow: 0 10px 25px red;
 }
 
 .buttons input[type="button"]#equel{
